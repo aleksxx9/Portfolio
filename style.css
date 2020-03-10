@@ -27,7 +27,7 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   display: flex;
   justify-content: center;
   padding: 3vh 3vh;
-  /* margin: auto; */
+  margin: auto;
   text-align: justify;
   background-color: #272725;
   color: white;
