@@ -26,8 +26,11 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
 .main {
   display: flex;
   justify-content: center;
+  padding: 3vh 0;
   margin: auto;
   text-align: center;
+  background-color: #272725;
+  color: white;
 }
 
 #backgroundOpacity {
@@ -47,12 +50,44 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   z-index: -1;
 }
 
+.link:visited {
+  color: white;
+}
+
+.nav-item:hover .nav-link, .nav-item:hover .link {
+  color: #b2d430;
+}
+
+.navbar {
+  background-color: #272725;
+  border: 1px solid black;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover .nav-link {
+  color: #b2d430;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item:hover {
+  transition: .7s ease;
+  cursor: pointer;
+}
+
+.nav-item, .logo {
+  list-style: none;
+}
+
 @media only screen and (min-width: 1200px) {
   .main {
-    opacity: 0.7;
     margin: 0 20vh;
-    background-color: #272725;
-    color: white;
   }
   .nav-item:first-child {
     margin-right: auto;
@@ -68,19 +103,16 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
     margin-right: 10vh;
   }
   .navbar-nav {
-    width: 100%;
     padding: 2vh 0;
     margin: auto 0;
     display: flex;
     justify-content: space-evenly;
   }
   .navbar {
-    background-color: #272725;
     font-size: 2vh;
     padding: 0;
     margin: 10vh 20vh;
     display: flex;
-    border: 1px solid black;
   }
   .center:first-child {
     margin: 0;
@@ -88,30 +120,19 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   .nav-item, .logo {
     margin: auto 3vh;
     display: inline;
-    list-style: none;
   }
   .nav-link {
     justify-content: space-around;
     display: inline;
-    color: white;
-    text-decoration: none;
-  }
-  .nav-item:hover .nav-link {
-    color: #b2d430;
   }
   .nav-item:hover {
-    transition: .7s ease;
-    cursor: pointer;
     transform: scale(1.5);
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 900px) {
   .main {
-    opacity: 0.7;
     margin: 0 5vh;
-    background-color: #272725;
-    color: white;
   }
   .nav-item:first-child {
     margin-right: auto;
@@ -127,19 +148,16 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
     margin-right: 10vh;
   }
   .navbar-nav {
-    width: 100%;
     padding: 2vh 0;
     margin: auto 0;
     display: flex;
     justify-content: space-evenly;
   }
   .navbar {
-    background-color: #272725;
     font-size: 2vh;
     padding: 0;
     margin: 10vh 5vh;
     display: flex;
-    border: 1px solid black;
   }
   .center:first-child {
     margin: 0;
@@ -147,20 +165,12 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   .nav-item, .logo {
     margin: auto 3vh;
     display: inline;
-    list-style: none;
   }
   .nav-link {
     justify-content: space-around;
     display: inline;
-    color: white;
-    text-decoration: none;
-  }
-  .nav-item:hover .nav-link {
-    color: #b2d430;
   }
   .nav-item:hover {
-    transition: .7s ease;
-    cursor: pointer;
     transform: scale(1.5);
   }
 }
@@ -170,10 +180,7 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
     display: none;
   }
   .main {
-    opacity: 0.7;
     margin: 0 5vh;
-    background-color: #272725;
-    color: white;
   }
   .nav-item:nth-last-child(2) {
     margin-left: auto;
@@ -185,19 +192,16 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
     margin-right: 10vh;
   }
   .navbar-nav {
-    width: 100%;
     padding: 2vh 0;
     margin: auto 0;
     display: flex;
     justify-content: space-evenly;
   }
   .navbar {
-    background-color: #272725;
     font-size: 2vh;
     padding: 0;
     margin: 10vh 5vh;
     display: flex;
-    border: 1px solid black;
   }
   .center:first-child {
     margin: 0;
@@ -205,20 +209,12 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   .nav-item, .logo {
     margin: auto 3vh;
     display: inline;
-    list-style: none;
   }
   .nav-link {
     justify-content: space-around;
     display: inline;
-    color: white;
-    text-decoration: none;
-  }
-  .nav-item:hover .nav-link {
-    color: #b2d430;
   }
   .nav-item:hover {
-    transition: .7s ease;
-    cursor: pointer;
     transform: scale(1.5);
   }
 }
@@ -228,10 +224,7 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
     display: none;
   }
   .main {
-    opacity: 0.7;
     margin: 0 5vh;
-    background-color: #272725;
-    color: white;
   }
   .nav-item:nth-last-child(2), .nav-item:last-child {
     transform: scale(0.6);
@@ -250,19 +243,16 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
     margin-right: 8vh;
   }
   .navbar-nav {
-    width: 100%;
     padding: 2vh 0;
     margin: auto 0;
     display: flex;
     justify-content: space-evenly;
   }
   .navbar {
-    background-color: #272725;
     font-size: 2vh;
     padding: 0;
     margin: 10vh 5vh;
     display: flex;
-    border: 1px solid black;
   }
   .center:first-child {
     margin: 0;
@@ -270,20 +260,12 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   .nav-item, .logo {
     margin: auto 3vh;
     display: inline;
-    list-style: none;
   }
   .nav-link {
     justify-content: space-around;
     display: inline;
-    color: white;
-    text-decoration: none;
-  }
-  .nav-item:hover .nav-link {
-    color: #b2d430;
   }
   .nav-item:hover {
-    transition: .7s ease;
-    cursor: pointer;
     transform: scale(1.5);
   }
 }
