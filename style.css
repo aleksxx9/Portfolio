@@ -1,6 +1,12 @@
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -24,13 +30,26 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
 }
 
 .main {
+  min-height: 100%;
   display: flex;
-  /* justify-content: center; */
   padding: 3vh 3vh;
-  margin: auto;
+  margin: 10vh 20vh;
   text-align: justify;
   background-color: #272725;
   color: white;
+}
+
+.content {
+  min-height: 100%;
+  margin-bottom: -6vh;
+}
+
+.footer {
+  padding: 2vh 0;
+  height: 2vh;
+  color: white;
+  background-color: #272725;
+  text-align: center;
 }
 
 #backgroundOpacity {
@@ -54,18 +73,32 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   color: white;
 }
 
-.nav-item:hover .nav-link, .nav-item:hover .link {
+.link:hover .nav-link, .nav-link:hover {
+  cursor: pointer;
   color: #b2d430;
 }
 
 .navbar {
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+  display: flex;
+  margin: auto;
   background-color: #272725;
   border: 1px solid black;
 }
 
 .nav-link {
   color: white;
-  text-decoration: none;
+  display: inline;
+  justify-content: space-around;
+}
+
+.item {
+  height: 100%;
+  justify-self: center;
+  margin: auto;
+  /* flex-direction: column; */
 }
 
 .nav-item:hover .nav-link {
@@ -73,19 +106,25 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
 }
 
 .navbar-nav {
+  padding: 0;
   width: 100%;
+  justify-content: space-around;
+  display: flex;
 }
 
-.nav-item:hover {
+.link:hover {
   transition: .7s ease;
   cursor: pointer;
 }
 
 .nav-item, .logo {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
   list-style: none;
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .main {
     margin: 0 20vh;
   }
@@ -128,9 +167,9 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   .nav-item:hover {
     transform: scale(1.5);
   }
-}
+} */
 
-@media only screen and (max-width: 1200px) and (min-width: 900px) {
+/* @media only screen and (max-width: 1200px) and (min-width: 900px) {
   .main {
     margin: 0 5vh;
   }
@@ -268,4 +307,4 @@ nav>h1:hover, nav>div>ul>li:hover, nav>div>div>i:hover {
   .nav-item:hover {
     transform: scale(1.5);
   }
-}
+} */
