@@ -26,7 +26,6 @@ body::-webkit-scrollbar-track {
 .main {
 	display: flex;
 	padding: 3vh 3vh;
-	margin: 10vh 20vh;
 	text-align: justify;
 	background-color: #272725;
 	color: white;
@@ -58,7 +57,7 @@ body::-webkit-scrollbar-track {
 	background: url("./images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.7;
+	opacity: 0.9;
 	z-index: -1;
 }
 
@@ -72,24 +71,54 @@ body::-webkit-scrollbar-track {
 	color: #b2d430;
 }
 
+.navbar a:first-of-type {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.navbar a:last-of-type,
+.navbar .nav-link {
+	margin: 0 5vh;
+}
+
+.item i {
+	padding: 0 1vh;
+}
+
 .navbar {
-	font-size: 2.5vh;
+	font-size: 2vh;
 	padding: 1vh;
-	justify-content: space-around;
 	position: -webkit-sticky;
 	top: 0;
 	position: sticky;
 	display: flex;
-	margin: auto;
 	background-color: #272725;
 }
 
 .nav-link {
+	display: flex;
 	margin: auto;
 	color: white;
 }
 
-.item {
+.link-text,
+.item,
+.link i {
 	margin: auto;
 	flex-direction: column;
+}
+
+@media only screen and (min-width: 800px) {
+	.main {
+		margin: 10vh 20vh;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+	.main {
+		margin: 10vh 2vh;
+	}
+	.link-text {
+		display: none;
+	}
 }
