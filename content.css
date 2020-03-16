@@ -1,0 +1,71 @@
+body::-webkit-scrollbar {
+	width: 1vh;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: white;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	background: #d6d5d5;
+}
+.profilePic {
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main h1 {
+	text-align: center;
+}
+
+.shadow {
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 800px) {
+	.full .card {
+		flex-direction: row;
+		display: flex;
+		display: inline;
+		background-color: red;
+	}
+
+	.row {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(4, minmax(140, 1fr));
+	}
+
+	.card-tall {
+		grid-row: span 2 / auto;
+	}
+
+	.cardContent {
+		grid-column: span 3 / auto;
+	}
+
+	.full {
+		grid-column: span 4 / auto;
+	}
+}

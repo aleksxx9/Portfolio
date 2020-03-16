@@ -1,11 +1,21 @@
 html,
 body {
 	height: 100%;
+	overflow-x: hidden;
 }
 body {
 	margin: 0;
 	font-family: "Poppins", sans-serif;
 	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	color: black;
 }
 
 .navbar {
@@ -14,6 +24,7 @@ body {
 	position: sticky;
 	height: 4rem;
 	display: flex;
+	width: 100vw;
 	background-color: white;
 	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
@@ -56,6 +67,7 @@ body {
 
 	padding: 2vh 0;
 	height: 2vh;
+	font-size: 0.7rem;
 	background-color: white;
 	text-align: center;
 }
@@ -79,22 +91,27 @@ body {
 	color: black;
 }
 
+.main hr {
+	margin: 4vh 0;
+}
+
 .main {
+	background-color: white;
 	padding: 5vh 5vw;
 	text-align: justify;
-	margin-bottom: 10vh;
+	/* margin-bottom: 10vh; */
 	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
+.nav-link {
+	cursor: pointer;
+}
+
 @media only screen and (min-width: 800px) {
 	.main {
-		margin: 5vh 5vw;
+		margin: 6vh 5vw;
 		margin-bottom: 10vh;
-	}
-
-	.nav-link {
-		cursor: pointer;
 	}
 
 	.hamburger {
@@ -104,12 +121,20 @@ body {
 	.hamburgerMain {
 		display: flex;
 	}
+
+	.footer {
+		margin-top: 0;
+	}
 }
 
 @media only screen and (max-width: 800px) {
+	.navbar {
+		width: 100%;
+	}
+
 	.main {
 		margin-top: 5vh;
-		margin-bottom: 10vh;
+		margin-bottom: 5vh;
 	}
 
 	.hamburgerMain {
@@ -120,7 +145,7 @@ body {
 	.hamburgerIcon {
 		position: -webkit-sticky;
 		position: sticky;
-		position: fixed;
+		position: absolute;
 		right: 0;
 		top: 0;
 		z-index: 1;
@@ -138,7 +163,6 @@ body {
 	.hamburgerIcon {
 		pointer-events: none;
 		content: "";
-		position: fixed;
 		z-index: 1;
 		top: 1.75rem;
 		right: 1rem;
@@ -180,11 +204,12 @@ body {
 		display: flex;
 		flex-direction: column;
 		left: -50vw;
+		top: -50vh;
 		opacity: 0;
 		transform: scale(0);
 		transform-origin: center;
 		width: 200vw;
-		height: 200vw;
+		height: 200vh;
 		border-radius: 50%;
 		transition: ease 0.3s;
 		background-color: #f5f5f5;
@@ -196,14 +221,15 @@ body {
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		padding-top: 20vh;
+		padding-top: 10vh;
 		top: 0;
 		display: flex;
 		background-color: #f5f5f5;
 		flex-direction: column;
 		height: 100vh;
-		opacity: 0;
-		scale: (0);
+		left: 0;
+		opacity: 0.5;
+		transform: scale(0);
 		transform-origin: center;
 		transition: 0.2s ease;
 	}
@@ -229,7 +255,7 @@ body {
 	}
 
 	.navCheck:checked ~ .wrap {
-		height: 200vw;
+		height: 200vh;
 		width: 200vw;
 		opacity: 1;
 		transform: scale(1);
@@ -237,18 +263,19 @@ body {
 		transition: ease 0.3s;
 	}
 
+	.navCheck:checked ~ .hamburgerContent .nav-link {
+		visibility: visible;
+	}
+
 	.hamburgerContent .nav-link {
+		visibility: hidden;
 		padding: 3vh 0;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	.hamburgerContent hr {
 		width: 80%;
 		color: rgba(0, 0, 0, 0.87);
-	}
-
-	.hamburgerContent .nav-link,
-	.wrap a {
-		text-align: center;
-		margin: 0 auto;
 	}
 }
