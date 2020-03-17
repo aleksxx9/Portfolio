@@ -32,11 +32,6 @@ body::-webkit-scrollbar-track {
 	background-repeat: no-repeat;
 }
 
-.img {
-	width: 140px;
-	height: 140px;
-}
-
 .main h1 {
 	text-align: center;
 }
@@ -50,6 +45,9 @@ body::-webkit-scrollbar-track {
 		flex-direction: row;
 		display: flex;
 		display: inline;
+	}
+	.img {
+		width: 300px;
 	}
 	.row {
 		display: grid;
