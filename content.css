@@ -40,6 +40,17 @@ body::-webkit-scrollbar-track {
 	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
+.iconBox {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.projectIcons {
+	font-size: 2rem;
+	margin: 0.5rem 1rem;
+}
+
 @media screen and (min-width: 800px) {
 	.full .card {
 		flex-direction: row;
@@ -48,6 +59,7 @@ body::-webkit-scrollbar-track {
 	}
 	.img {
 		width: 300px;
+		grid-row: span 2 / auto;
 	}
 	.row {
 		display: grid;
@@ -59,6 +71,7 @@ body::-webkit-scrollbar-track {
 	}
 	.cardContent {
 		grid-column: span 3 / auto;
+		grid-row: span / auto;
 	}
 	.full {
 		grid-column: span 4 / auto;
