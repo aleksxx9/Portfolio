@@ -40,7 +40,7 @@ body::-webkit-scrollbar-track {
 	width: 300px;
 }
 
-.main .hCenter {
+.main .hCenter, .mainAbout .hCenter {
 	text-align: center;
 }
 
@@ -60,6 +60,9 @@ body::-webkit-scrollbar-track {
 }
 
 @media screen and (min-width: 800px) {
+	.invisible {
+		display: none;
+	}
 	.list {
 		padding-left: 160px;
 	}
