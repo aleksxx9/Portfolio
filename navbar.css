@@ -1,8 +1,8 @@
-html,
-body {
+html, body {
 	height: 100%;
 	overflow-x: hidden;
 }
+
 body {
 	margin: 0;
 	font-family: "Poppins", sans-serif;
@@ -22,12 +22,11 @@ a:visited {
 	position: -webkit-sticky;
 	top: 0;
 	position: sticky;
-	height: 4rem;
+	height: 3rem;
 	display: flex;
 	width: 100vw;
 	background-color: white;
-	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 	justify-content: center;
 }
 
@@ -62,9 +61,7 @@ a:visited {
 }
 
 .footer {
-	box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.02),
-		0px -4px 5px 0px rgba(0, 0, 0, 0.04), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
-
+	box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.02), 0px -4px 5px 0px rgba(0, 0, 0, 0.04), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
 	padding: 2vh 0;
 	height: 2vh;
 	font-size: 0.7rem;
@@ -73,21 +70,20 @@ a:visited {
 }
 
 .icons {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-align: center;
 	margin-top: 0.5rem;
 }
 
 .item i {
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 }
 
 .link-text {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 }
 
-.icons,
-.icons:visited {
+.icons, .icons:visited {
 	color: black;
 }
 
@@ -95,33 +91,38 @@ a:visited {
 	margin: 4vh 0;
 }
 
-.main {
+.main, .mainAbout {
 	background-color: white;
 	padding: 5vh 5vw;
 	text-align: justify;
 	/* margin-bottom: 10vh; */
-	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .nav-link {
 	cursor: pointer;
 }
 
+.link {
+	padding: 0.2rem;
+}
+
+.link:hover, .nav-link:hover {
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+
 @media only screen and (min-width: 800px) {
-	.main {
+	.main, .mainAbout {
 		margin: 6vh 5vw;
 		margin-bottom: 10vh;
 	}
-
 	.hamburger {
 		display: none;
 	}
-
 	.hamburgerMain {
 		display: flex;
 	}
-
 	.footer {
 		margin-top: 0;
 	}
@@ -131,20 +132,18 @@ a:visited {
 	.navbar {
 		width: 100%;
 	}
-
 	.main {
 		margin-top: 5vh;
 		margin-bottom: 5vh;
 	}
-
+	.mainAbout {
+		margin-top: 5vh;
+		margin-bottom: 10vh;
+	}
 	.hamburgerMain {
 		display: none;
 	}
-
-	.navCheck,
-	.hamburgerIcon {
-		position: -webkit-sticky;
-		position: sticky;
+	.navCheck, .hamburgerIcon {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -153,30 +152,25 @@ a:visited {
 		width: 4rem;
 		height: 4rem;
 	}
-
 	.navCheck {
 		opacity: 0;
 		z-index: 1;
 		cursor: pointer;
 	}
-
 	.hamburgerIcon {
 		pointer-events: none;
 		content: "";
 		z-index: 1;
-		top: 1.75rem;
+		top: 1.5rem;
 		right: 1rem;
 		height: 0.25rem;
 		width: 2rem;
 		background: rgba(0, 0, 0, 0.75);
 		border-radius: 2px;
 		transition: 0.3s ease;
-		box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-			0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+		box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 	}
-
-	.hamburgerIcon::before,
-	.hamburgerIcon::after {
+	.hamburgerIcon::before, .hamburgerIcon::after {
 		content: "";
 		transition: 0.3s ease;
 		position: absolute;
@@ -190,13 +184,11 @@ a:visited {
 		border-radius: 2px;
 		height: 0.25rem;
 		background: rgba(0, 0, 0, 0.75);
-		box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-			0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+		box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 	}
 	.hamburgerIcon::after {
 		top: 0.75rem;
 	}
-
 	.hamburger .wrap {
 		overflow: hidden;
 		justify-content: center;
@@ -215,7 +207,6 @@ a:visited {
 		background-color: #f5f5f5;
 		position: fixed;
 	}
-
 	.hamburgerContent {
 		margin: auto;
 		position: fixed;
@@ -233,28 +224,23 @@ a:visited {
 		transform-origin: center;
 		transition: 0.2s ease;
 	}
-
-	.navCheck:checked + .hamburgerIcon {
+	.navCheck:checked+.hamburgerIcon {
 		transform: rotate(135deg);
 		background: black;
 		transition: 0.3s ease;
 	}
-
-	.navCheck:checked + .hamburgerIcon::before,
-	.navCheck:checked + .hamburgerIcon::after {
+	.navCheck:checked+.hamburgerIcon::before, .navCheck:checked+.hamburgerIcon::after {
 		top: 0;
 		transition: 0.3s ease;
 		transform: rotate(90deg);
 	}
-
-	.navCheck:checked ~ .hamburgerContent {
+	.navCheck:checked~.hamburgerContent {
 		opacity: 1;
 		transform: scale(1);
 		transform-origin: center;
 		transition: ease 0.3s;
 	}
-
-	.navCheck:checked ~ .wrap {
+	.navCheck:checked~.wrap {
 		height: 200vh;
 		width: 200vw;
 		opacity: 1;
@@ -262,18 +248,15 @@ a:visited {
 		transform-origin: center;
 		transition: ease 0.3s;
 	}
-
-	.navCheck:checked ~ .hamburgerContent .nav-link {
+	.navCheck:checked~.hamburgerContent .nav-link {
 		visibility: visible;
 	}
-
 	.hamburgerContent .nav-link {
 		visibility: hidden;
 		padding: 3vh 0;
 		text-align: center;
 		margin: 0 auto;
 	}
-
 	.hamburgerContent hr {
 		width: 80%;
 		color: rgba(0, 0, 0, 0.87);

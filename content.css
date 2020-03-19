@@ -19,6 +19,10 @@ body::-webkit-scrollbar-track {
 	height: 140px;
 }
 
+.profileContainer {
+	width: 300px;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -32,7 +36,11 @@ body::-webkit-scrollbar-track {
 	background-repeat: no-repeat;
 }
 
-.main h1 {
+.profileContainer {
+	width: 300px;
+}
+
+.main .hCenter {
 	text-align: center;
 }
 
@@ -52,6 +60,9 @@ body::-webkit-scrollbar-track {
 }
 
 @media screen and (min-width: 800px) {
+	.list {
+		padding-left: 160px;
+	}
 	.full .card {
 		flex-direction: row;
 		display: flex;
@@ -72,6 +83,9 @@ body::-webkit-scrollbar-track {
 	.cardContent {
 		grid-column: span 3 / auto;
 		grid-row: span / auto;
+	}
+	.half {
+		grid-column: span 2 / auto;
 	}
 	.full {
 		grid-column: span 4 / auto;
