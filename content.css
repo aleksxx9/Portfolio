@@ -60,7 +60,21 @@ body::-webkit-scrollbar-track {
 	margin: 0.5rem 1rem;
 }
 
+.block {
+	display: block;
+}
+
 @media screen and (min-width: 800px) {
+	.block {
+		display: flex;
+	}
+	.text {
+		text-align: center;
+		margin: 0;
+	}
+	.margin {
+		margin: auto;
+	}
 	.invisible {
 		display: none;
 	}
