@@ -72,14 +72,11 @@ body::-webkit-scrollbar-track {
 		text-align: center;
 		margin: 0;
 	}
-	.margin {
-		margin: auto;
-	}
 	.invisible {
 		display: none;
 	}
 	.list {
-		padding-left: 160px;
+		padding-left: 25vw;
 	}
 	.full .card {
 		flex-direction: row;
