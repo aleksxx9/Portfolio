@@ -1,0 +1,70 @@
+{
+    "profile": {
+        "pic": "main.jpg",
+        "name": "Aleksandras Salnik",
+        "heading": "Software engineer",
+        "description": "Hi, I am software engineer constantly seeking for improvement. Currently working on front-end skills and trying new things in React framework. At this moment I am searching for a job or internship."
+    },
+    "currentProject": {
+        "pic": "ResponsiveForms.png",
+        "name": "Responsive form with validation",
+        "description": "This project is made using React, Redux and material-ui. With Redux the credentials are getting checked as you type and warnings are shown accordingly. On submit button success message is shown.",
+        "git": "https://github.com/aleksxx9/Blog",
+        "web": "https://aleksxx9.github.io/Blog"
+    },
+    "projects": {
+        "todo": {
+            "pic": "todo.png",
+            "name": "To-do list",
+            "description": "This project is made using Javascript, CSS and HTML. Here all to-dos are saved in local storage which means, that when page is reloaded to-dos does not dissapear.",
+            "git": "https://github.com/aleksxx9/Todo",
+            "web": "https://aleksxx9.github.io/Todo"
+        }
+    },
+    "about": {
+        "education": {
+            "years": [
+                "2016 - 2020",
+                "2012 - 2016"
+            ],
+            "description": [
+                "Vilnius University of Applied Sciences (Vilniaus kolegija) - Software Engineering",
+                "Vilnius Karoliniškės gymnasium"
+            ]
+        },
+        "experience": {
+            "years": [
+                "05.2019 - 11.2019",
+                "10.2018 - 11.2018"
+            ],
+            "description": [
+                "Junior developer at Digital retail development. Full-time",
+                "Internship at Baltic Amadeus"
+            ]
+        },
+        "skills": [
+            "Javascript",
+            "Css",
+            "HTML",
+            "jQuery",
+            "C#",
+            "Basic knowledge of PHP",
+            "MongoDB",
+            "FireBase",
+            "mySql",
+            "React",
+            "Node.js / Node express",
+            "Basic knowledge of Angular"
+        ],
+        "other": [
+            "Drivers license (B)",
+            "Fluent at English, Lithuanian and Russian languages"
+        ],
+        "hobbies": [
+            "Photoshop",
+            "Rollerblading",
+            "Gaming",
+            "Running"
+        ]
+    }
+}
