@@ -1,5 +1,5 @@
 (function () {
-    fetch('../data.json')
+    fetch('./data.json')
         .then(res => res.json())
         .then(data => {
             const hr1 = document.createElement('hr');
