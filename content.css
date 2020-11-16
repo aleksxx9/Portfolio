@@ -37,6 +37,10 @@ body::-webkit-scrollbar-track {
 	background-repeat: no-repeat;
 }
 
+.cardMargin {
+	margin-left: -16px;
+}
+
 .profileContainer {
 	width: 300px;
 }
@@ -64,6 +68,11 @@ body::-webkit-scrollbar-track {
 	display: block;
 }
 
+.list, ul {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
 @media screen and (min-width: 800px) {
 	.block {
 		display: flex;
@@ -75,7 +84,11 @@ body::-webkit-scrollbar-track {
 	.invisible {
 		display: none;
 	}
+	ul{
+		margin-bottom:16px;
+	}
 	.list {
+		padding-top:16px;
 		padding-left: 25vw;
 	}
 	.full .card {

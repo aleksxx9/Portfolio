@@ -1,68 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="richman.lt">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./content.css">
-  <link rel="stylesheet" href="./navbar.css">
-  <link rel="icon" href="./images/logo.png">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="richman.lt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./content.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-  <title>Portfolio</title>
-</head>
+    <title>Portfolio</title>
+  </head>
 
-<body>
-  <div id="backgroundOpacity"></div>
-  <div class="content">
-    <nav class="navbar">
-      <div class="hamburgerMain">
-        <div class=" nav-link">
-          <a href="./">
-            <div class="item">
-              <i class="fas fa-home"></i>
-              <span class="link-text">Home</span>
-            </div>
-          </a>
-        </div>
-        <div class="nav-link">
-          <a href="./projects.html">
-            <div class="item">
-              <i class="fas fa-pen"></i>
-              <span class="link-text">Projects</span>
-            </div>
-          </a>
-        </div>
-        <div class="nav-link">
-          <a href="./about.html">
-            <div class="item">
-              <i class="fas fa-info-circle"></i>
-              <span class="link-text">About</span>
-            </div>
-          </a>
-        </div>
-        <a href="https://www.github.com/aleksxx9" class="nav-link icons" target="_blank">
-          <div class="link">
-            <i class="fab fa-github fa-lg"></i>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/aleksandras-salnik-222711192/" class="nav-link icons" target="_blank">
-          <div class="link">
-            <i class="fab fa-linkedin fa-lg"></i>
-          </div>
-        </a>
-      </div>
-
-
-      <div class="hamburger">
-        <input type="checkbox" class="navCheck" autocomplete="off">
-        <div class="hamburgerIcon"></div>
-        <div class="wrap">
-        </div>
-
-        <div class="hamburgerContent">
+  <body>
+    <div id="backgroundOpacity"></div>
+    <div class="content">
+      <nav class="navbar">
+        <div class="hamburgerMain">
           <div class=" nav-link">
             <a href="./">
               <div class="item">
@@ -71,7 +27,6 @@
               </div>
             </a>
           </div>
-          <hr>
           <div class="nav-link">
             <a href="./projects.html">
               <div class="item">
@@ -80,7 +35,6 @@
               </div>
             </a>
           </div>
-          <hr>
           <div class="nav-link">
             <a href="./about.html">
               <div class="item">
@@ -89,97 +43,77 @@
               </div>
             </a>
           </div>
-          <hr>
           <a href="https://www.github.com/aleksxx9" class="nav-link icons" target="_blank">
             <div class="link">
               <i class="fab fa-github fa-lg"></i>
             </div>
           </a>
-          <hr>
           <a href="https://www.linkedin.com/in/aleksandras-salnik-222711192/" class="nav-link icons" target="_blank">
             <div class="link">
               <i class="fab fa-linkedin fa-lg"></i>
             </div>
           </a>
         </div>
+
+
+        <div class="hamburger">
+          <input type="checkbox" class="navCheck" autocomplete="off">
+          <div class="hamburgerIcon"></div>
+          <div class="wrap">
+          </div>
+
+          <div class="hamburgerContent">
+            <div class=" nav-link">
+              <a href="./">
+                <div class="item">
+                  <i class="fas fa-home"></i>
+                  <span class="link-text">Home</span>
+                </div>
+              </a>
+            </div>
+            <hr>
+            <div class="nav-link">
+              <a href="./projects.html">
+                <div class="item">
+                  <i class="fas fa-pen"></i>
+                  <span class="link-text">Projects</span>
+                </div>
+              </a>
+            </div>
+            <hr>
+            <div class="nav-link">
+              <a href="./about.html">
+                <div class="item">
+                  <i class="fas fa-info-circle"></i>
+                  <span class="link-text">About</span>
+                </div>
+              </a>
+            </div>
+            <hr>
+            <a href="https://www.github.com/aleksxx9" class="nav-link icons" target="_blank">
+              <div class="link">
+                <i class="fab fa-github fa-lg"></i>
+              </div>
+            </a>
+            <hr>
+            <a href="https://www.linkedin.com/in/aleksandras-salnik-222711192/" class="nav-link icons" target="_blank">
+              <div class="link">
+                <i class="fab fa-linkedin fa-lg"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main">
       </div>
-    </nav>
-
-    <div class="main">
-      <div class="row">
-        <div class="card profileContainer">
-          <img class="profilePic"
-            src="./images/main.jpg"
-            alt="Profile picture">
-        </div>
-        <div class="card cardContent">
-          <h1 class="name">Aleksandras Salnik</h1>
-          <p>Software engineer</p>
-          <p>Hi, I am software engineer constantly seeking for improvement. Currently working on front-end skills and
-            trying new things in React framework. At this moment I am searching for a job or internship.</p>
-        </div>
-        <hr class="full">
-        <div class="full">
-          <h1 class="hCenter">What im working on right now</h1>
-        </div>
-        <div class="card img"><img src="./images/ResponsiveForms.PNG" alt="Form" width="300">
-        </div>
-        <div class="cardContent card">
-          <h1 class="hCenter">Responsive form with validation</h1>
-          <h3>Short description</h3>
-          <p>
-            This project is made using React, Redux and material-ui. With Redux the credentials are getting checked as
-            you type and warnings are shown accordingly. On submit button success message is shown.
-          </p>
-        </div>
-        <div class="cardContent card  iconBox">
-          <a href="https://github.com/aleksxx9/Blog" class="projectIcons" target="_blank">
-            <div class="link">
-              <i class="fab fa-github-square fa-lg black"></i>
-            </div>
-          </a>
-          <a href="http://aleksxx9.github.io/Blog/" class="projectIcons" target="_blank">
-            <div class="link">
-              <i class="fab fa-chrome fa-lg black"></i>
-            </div>
-          </a>
-        </div>
-        <hr class="full">
-        <div class="full">
-          <h1 class="hCenter">My recent projects</h1>
-        </div>
-        <div class="card img"><img src="./images/todo.png" alt="Form" width="300">
-        </div>
-        <div class="cardContent card">
-          <h1 class="hCenter">Simple to-do list</h1>
-          <h3>Short description</h3>
-          <p>
-            This project is made using Javascript, CSS and HTML. Here all to-dos are saved in local storage which
-            means, that when page is reloaded to-dos does not dissapear.
-          </p>
-        </div>
-        <div class="cardContent card  iconBox">
-          <a href="https://github.com/aleksxx9/Todo" class="projectIcons" target="_blank">
-            <div class="link">
-              <i class="fab fa-github-square fa-lg black"></i>
-            </div>
-          </a>
-          <a href="http://aleksxx9.github.io/Todo/" class="projectIcons" target="_blank">
-            <div class="link">
-              <i class="fab fa-chrome fa-lg black"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
-  <footer class="footer">
-    &copy Aleksandras Salnik
-  </footer>
-  <script src="index.js"></script>
-</body>
+      <footer class="footer">
+        &copy Aleksandras Salnik
+      </footer>
+      <script src="index.js"></script>
+  </body>
 
 </html>
