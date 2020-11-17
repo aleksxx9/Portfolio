@@ -88,7 +88,6 @@ body::-webkit-scrollbar-track {
 		margin-bottom:16px;
 	}
 	.list {
-		padding-top:16px;
 		padding-left: 25vw;
 	}
 	.full .card {
