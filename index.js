@@ -49,7 +49,7 @@ fetch("./data.json")
     projectHeaderContainer.append(projectsHeader);
 
     row.append(projectHeaderContainer);
-    for (let i = 0; i < data.projects.length; i++) {
+    for (let i = 0; i < (data.projects.length > 5 ? 5: data.projects.length); i++) {
       const projectImgContainer = document.createElement('div');
       projectImgContainer.classList.add('card', 'img');
 

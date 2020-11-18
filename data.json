@@ -1,72 +1,67 @@
 {
-    "profile": {
-        "pic": "./images/main.jpg",
-        "name": "Aleksandras Salnik",
-        "heading": "Software engineer",
-        "description": "Hi, I am software engineer constantly seeking for improvement. Currently working on front-end skills and trying new things in React framework. At this moment I am searching for a job or internship."
+  "profile": {
+    "pic": "./images/main.jpg",
+    "name": "Aleksandras Salnik",
+    "heading": "Software engineer",
+    "description": "Hi, I am software engineer constantly seeking for improvement. Currently working on front-end skills and trying new things in React framework. At this moment I am searching for a job or internship."
+  },
+  "projects": [
+    {
+        "pic": "./images/pdf.png",
+        "name": "HTML to PDF converter",
+        "description": "This project was made using javascript, jsPDF and html2canvas. Your html code is being processed to canvas and then converted to pdf picture.",
+        "git": "https://github.com/aleksxx9/HtmlToPDFConverter",
+        "web": "https://aleksxx9.github.io/HtmlToPDFConverter"
+      },
+      {
+        "pic": "./images/ResponsiveForms.png",
+        "name": "Responsive form with validation",
+        "description": "This project is made using React, Redux and material-ui. With Redux the credentials are getting checked as you type and warnings are shown accordingly. On submit button success message is shown.",
+        "git": "https://github.com/aleksxx9/Blog",
+        "web": "https://aleksxx9.github.io/Blog"
+      },
+      {
+        "pic": "./images/todo.png",
+        "name": "To-do list",
+        "description": "This project is made using Javascript, CSS and HTML. Here all to-dos are saved in local storage which means, that when page is reloaded to-dos does not dissapear.",
+        "git": "https://github.com/aleksxx9/Todo",
+        "web": "https://aleksxx9.github.io/Todo"
+      }
+  ],
+  "about": {
+    "education": {
+      "years": ["2016 - 2020", "2012 - 2016"],
+      "description": [
+        "Vilnius University of Applied Sciences (Vilniaus kolegija) - Software Engineering",
+        "Vilnius Karoliniškės gymnasium"
+      ]
     },
-    "projects": [
-        {
-            "pic": "./images/ResponsiveForms.png",
-            "name": "Responsive form with validation",
-            "description": "This project is made using React, Redux and material-ui. With Redux the credentials are getting checked as you type and warnings are shown accordingly. On submit button success message is shown.",
-            "git": "https://github.com/aleksxx9/Blog",
-            "web": "https://aleksxx9.github.io/Blog"
-        },
-        {
-            "pic": "./images/todo.png",
-            "name": "To-do list",
-            "description": "This project is made using Javascript, CSS and HTML. Here all to-dos are saved in local storage which means, that when page is reloaded to-dos does not dissapear.",
-            "git": "https://github.com/aleksxx9/Todo",
-            "web": "https://aleksxx9.github.io/Todo"
-        }
+    "experience": {
+      "years": ["2020.07 - 2020.08", "2019.05 - 2019.11", "2018.10 - 2018.11"],
+      "description": [
+        "Internship at Visma, </br>Tech stack - Angular, NgRx, HTML, CSS, Node.js </br>  <div class='cardContent cardMargin iconBox'><a href='https://github.com/aleksandrassalnik/VismaSummerClass2020' class='projectIcons' target='_blank'><div class='link'><i class='fab fa-github-square fa-lg black' aria-hidden='true'></i></div></a><a href='https://aleksandrassalnik.github.io/VismaSummerClass2020/Website/' class='projectIcons' target='_blank'><div class='link'><i class='fab fa-chrome fa-lg black' aria-hidden='true'></i></div></a></div>",
+        "Junior developer at Digital retail development. Full-time",
+        "Internship at Baltic Amadeus, </br> Tech stack - React, HTML, CSS, C#, RavenDB"
+      ]
+    },
+    "skills": [
+      "Javascript",
+      "Css",
+      "HTML",
+      "jQuery",
+      "C#",
+      "Basic knowledge of PHP",
+      "MongoDB",
+      "FireBase",
+      "mySql",
+      "React",
+      "Node.js / Node express",
+      "Basic knowledge of Angular"
     ],
-    "about": {
-        "education": {
-            "years": [
-                "2016 - 2020",
-                "2012 - 2016"
-            ],
-            "description": [
-                "Vilnius University of Applied Sciences (Vilniaus kolegija) - Software Engineering",
-                "Vilnius Karoliniškės gymnasium"
-            ]
-        },
-        "experience": {
-            "years": [
-                "2020.07 - 2020.08",
-                "2019.05 - 2019.11",
-                "2018.10 - 2018.11"
-            ],
-            "description": [
-                "Internship at Visma, </br>Tech stack - Angular, NgRx, HTML, CSS, Node.js </br>  <div class='cardContent cardMargin iconBox'><a href='https://github.com/aleksandrassalnik/VismaSummerClass2020' class='projectIcons' target='_blank'><div class='link'><i class='fab fa-github-square fa-lg black' aria-hidden='true'></i></div></a><a href='https://aleksandrassalnik.github.io/VismaSummerClass2020/Website/' class='projectIcons' target='_blank'><div class='link'><i class='fab fa-chrome fa-lg black' aria-hidden='true'></i></div></a></div>",
-                "Junior developer at Digital retail development. Full-time",
-                "Internship at Baltic Amadeus, </br> Tech stack - React, HTML, CSS, C#, RavenDB"
-            ]
-        },
-        "skills": [
-            "Javascript",
-            "Css",
-            "HTML",
-            "jQuery",
-            "C#",
-            "Basic knowledge of PHP",
-            "MongoDB",
-            "FireBase",
-            "mySql",
-            "React",
-            "Node.js / Node express",
-            "Basic knowledge of Angular"
-        ],
-        "other": [
-            "Drivers license (B)",
-            "Fluent at English, Lithuanian and Russian languages"
-        ],
-        "hobbies": [
-            "Photoshop",
-            "Rollerblading",
-            "Gaming",
-            "Running"
-        ]
-    }
+    "other": [
+      "Drivers license (B)",
+      "Fluent at English, Lithuanian and Russian languages"
+    ],
+    "hobbies": ["Photoshop", "Rollerblading", "Gaming", "Running"]
+  }
 }
