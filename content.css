@@ -99,6 +99,10 @@ body::-webkit-scrollbar-track {
 		width: 300px;
 		grid-row: span 2 / auto;
 	}
+	.img img {
+		aspect-ratio: 1/1;
+		object-fit: scale-down;
+	}
 	.row {
 		display: grid;
 		gap: 1rem;

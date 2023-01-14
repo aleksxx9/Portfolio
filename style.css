@@ -1,0 +1,144 @@
+body {
+    width: 95%;
+    margin: auto;
+    font-family: sans-serif;
+    padding-left: 20px;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0%;
+    left: 0%;
+    right: 0%;
+    padding: 3%;
+}
+.navigation_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.active{
+    color: hotpink;
+}
+main {
+    padding: 3%;
+    left: 0%;
+    right: 0%;
+}
+.first_container {
+    display: flex;
+    flex: 1 1 0;
+    gap: 20px;
+}
+    .soon {
+    color: deeppink;
+    padding-bottom: 0%;
+}
+.NFT {
+    font-size: 60px;
+    padding-bottom: 1%;
+}
+button {
+    width: max-content;
+    border-radius: 20px;
+    border-color: linear-gradient(#ff3998, #ff7e39, #67ff39);
+    padding: 10px 15px;
+    padding-bottom: 4%;
+}
+.second_container {
+    padding-bottom: 7%;
+    background-color: #ff3998;
+    padding-bottom: 4%;
+}
+.firm {
+    display: flex;
+    gap: 160px;
+    padding-bottom: 4%;
+}
+.items_list {
+    display: flex;
+    flex: 1 1 0;
+    gap: 20px;
+}
+.items_list {
+    display: flex;
+    flex: 1 1 0px;
+    padding-bottom: 7%;
+    padding-left: 0%;
+}
+.purple_man {
+    padding: 0;
+    margin: 0;
+}
+.cost {
+    display: flex;
+    justify-content: space-between;
+    background-color:lightgray;
+    margin: 0;
+    padding: 0;
+    top: 0%;
+    right: 5px;
+    align-items: center;
+    border-bottom-right-radius: 9%;
+    border-bottom-left-radius: 9%;
+}
+.left{
+    padding-left: 20px;
+}
+.left h6 {color: coral;
+}
+.right h6 {
+    color: rgb(148, 147, 147);
+}
+h4{
+    color: rgb(148, 147, 147);
+}
+.right {
+    padding-right: 20px;
+}
+.last_container {
+    display: flex;
+    flex: 1 1 0;
+    margin-top: 7%;
+    padding-bottom: 0%;
+    gap:40px;
+}
+    .soon {
+    color: deeppink;
+}
+    button {
+    width: max-content;
+    border-radius: 20px;
+    border-color: linear-gradient(#ff3998, #ff7e39, #67ff39);;
+    padding: 10px 15px; 
+    }
+    .flist {
+        display: flex;
+        justify-content: space-between;
+    }
+    .table1{
+        padding-left: 0%;
+    }
+    .hardwork{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .table1 {
+        padding-left: 0%;
+    }
+    .footer {
+        display:flex;
+        justify-content: space-between;
+        flex: 1 1 0;
+        padding-bottom: 2%;
+        color: darkgray;
+        padding-left: 20 px;
+    }

@@ -3,30 +3,37 @@
     "pic": "./images/main.jpg",
     "name": "Aleksandras Salnik",
     "heading": "Software engineer",
-    "description": "Hi, I am software engineer constantly seeking for improvement. Currently working on front-end skills and trying new things in React framework. At this moment I am searching for a job or internship."
+    "description": "Hi, I am software engineer constantly seeking for improvement."
   },
   "projects": [
     {
-        "pic": "./images/pdf.png",
-        "name": "HTML to PDF converter",
-        "description": "This project was made using javascript, jsPDF and html2canvas. Your html code is being processed to canvas and then converted to pdf picture.",
-        "git": "https://github.com/aleksxx9/HtmlToPDFConverter",
-        "web": "https://aleksxx9.github.io/HtmlToPDFConverter"
-      },
-      {
-        "pic": "./images/ResponsiveForms.png",
-        "name": "Responsive form with validation",
-        "description": "This project is made using React, Redux and material-ui. With Redux the credentials are getting checked as you type and warnings are shown accordingly. On submit button success message is shown.",
-        "git": "https://github.com/aleksxx9/Blog",
-        "web": "https://aleksxx9.github.io/Blog"
-      },
-      {
-        "pic": "./images/todo.png",
-        "name": "To-do list",
-        "description": "This project is made using Javascript, CSS and HTML. Here all to-dos are saved in local storage which means, that when page is reloaded to-dos does not dissapear.",
-        "git": "https://github.com/aleksxx9/Todo",
-        "web": "https://aleksxx9.github.io/Todo"
-      }
+      "pic": "./images/simon.png",
+      "name": "Simon says game",
+      "description": "This game was made using React. Just a fun little project to make. Main issue was to solve resetting game in the middle of sequence.",
+      "git": "https://github.com/aleksxx9/Simon-says",
+      "web": "https://aleksxx9.github.io/Simon-says"
+    },
+    {
+      "pic": "./images/pdf.png",
+      "name": "HTML to PDF converter",
+      "description": "This project was made using javascript, jsPDF and html2canvas. Your html code is being processed to canvas and then converted to pdf picture.",
+      "git": "https://github.com/aleksxx9/HtmlToPDFConverter",
+      "web": "https://aleksxx9.github.io/HtmlToPDFConverter"
+    },
+    {
+      "pic": "./images/ResponsiveForms.png",
+      "name": "Responsive form with validation",
+      "description": "This project is made using React, Redux and material-ui. With Redux the credentials are getting checked as you type and warnings are shown accordingly. On submit button success message is shown.",
+      "git": "https://github.com/aleksxx9/Blog",
+      "web": "https://aleksxx9.github.io/Blog"
+    },
+    {
+      "pic": "./images/todo.png",
+      "name": "To-do list",
+      "description": "This project is made using Javascript, CSS and HTML. Here all to-dos are saved in local storage which means, that when page is reloaded to-dos do not dissapear.",
+      "git": "https://github.com/aleksxx9/Todo",
+      "web": "https://aleksxx9.github.io/Todo"
+    }
   ],
   "about": {
     "education": {
